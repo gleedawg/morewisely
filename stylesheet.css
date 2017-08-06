@@ -1,0 +1,477 @@
+/*
+Table of Contents
+   1. Reset CSS
+   2. Background
+   3. Header
+   4. Body
+   5. Footer
+   6. Miscellaneous
+*/
+
+/* 2. Background */
+#grid-bg {
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+
+   display: block;
+
+   width: 100%;
+   height: 100%;
+
+   font-size: 0;
+}
+
+#grid-bg .grid-col {
+   position: relative;
+
+   display: inline-block;
+
+   box-sizing: border-box;
+   width: 20%;
+   height: 100%;
+
+   background-color: #1b1a1a;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+#grid-bg .grid-col:nth-child(odd) {
+   background-color: #1d1d1d;
+}
+
+#grid-bg .grid-col:nth-child(1) {
+   z-index: 3;
+}
+
+#grid-bg .grid-col:nth-child(2) {
+   z-index: 2;
+
+   box-shadow: 0 0 14px rgba(0, 0, 0, 0.7);
+}
+
+#grid-bg .grid-col:nth-child(3) {
+   z-index: 1;
+
+   background-color: #181818;
+}
+
+#grid-bg .grid-col:nth-child(4) {
+   z-index: 2;
+
+   box-shadow: 0 0 14px rgba(0, 0, 0, 0.7);
+}
+
+#grid-bg .grid-col:nth-child(5) {
+   z-index: 3;
+}
+
+/* 3. Header */
+header {
+   display: flex;
+
+   padding: 20px 0;
+
+   flex-wrap: nowrap;
+   align-items: flex-start;
+}
+
+/* Home Button: Top Left Corner */
+div#home-button a {
+   text-decoration: none;
+
+   color: #fa4a4a;
+
+   font-family: 'Leckerli One',cursive;
+   font-size: 40px;
+}
+
+#home-button {
+   padding: 0 30px;
+
+   flex-grow: 0;
+   flex-shrink: 0;
+}
+
+/* Contact List Top Menu */
+#contact-list {
+   flex-grow: 1;
+}
+
+#contact-list ul {
+   margin: 0;
+   padding: 0;
+
+   text-align: right;
+}
+
+#contact-list ul li {
+   display: inline-block;
+}
+
+.contact-menu li a {
+   display: block;
+
+   padding: 18px 20px;
+
+   transition: all 400ms ease-in-out;
+   transform: scale(1);
+   text-decoration: none;
+
+   color: #f9fef0;
+   text-shadow: .5px .5px 1px #141414;
+
+   font-family: 'Raleway',sans-serif;
+   font-size: 14px;
+}
+
+.contact-menu li a:hover {
+   transform: scale(1.15);
+
+   color: #2c9696;
+}
+
+/* 4. Body */
+
+body {
+   position: relative;
+
+   display: block;
+
+   margin: 0;
+
+   background-color: #141414;
+}
+
+h1,h2,h3 {
+   font-family: 'Raleway',sans-serif;
+   font-weight: 900;
+}
+
+p,h2,h3 {
+   color: #f9fef0;
+   text-shadow: 5px 5px 10px #141414;
+}
+
+h1 {
+   color: #282828;
+
+   font-size: 130px;
+}
+/*font size ratio h1:h2 is .929:1*/
+h2 {
+   font-size: 140px;
+}
+
+h3 {
+   margin-right: 5%;
+   margin-bottom: 10px;
+   padding-bottom: 3px;
+
+   border-bottom: #2C9696 solid 3.5px;
+
+   font-size: 34px;
+}
+/*h2 corner of "P" from philosophy should sit in the middle of "o" from about*/
+h1+h2 {
+   margin-top: -200px;
+   margin-left: 203px;
+}
+
+p {
+   text-shadow: .5px .5px 1px #141414;
+
+   font-family:'raleway',sans-serif;
+   font-size: 17px;
+   font-weight: 100;
+   line-height: 140%;
+}
+
+p a {
+   position: relative;
+
+   text-decoration: none;
+
+   color: #fa4a4a;
+}
+
+p a:hover {
+   color: #fa4a4a;
+}
+
+p a:before {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+
+   visibility: hidden;
+
+   width: 100%;
+   height: 2px;
+
+   content: "";
+   -webkit-transition: all 0.3s ease-in-out 0s;
+   transition: all 0.3s ease-in-out 0s;
+   -webkit-transform: scaleX(0);
+   transform: scaleX(0);
+
+   background-color: #fa4a4a;
+}
+
+p a:hover:before {
+   visibility: visible;
+
+   -webkit-transform: scaleX(1);
+   transform: scaleX(1);
+}
+section p {
+   max-width: 650px;
+}
+
+section p, ol {
+   width:85%;
+   margin-left: 40px;
+}
+
+li {
+   color: #f9fef0;
+
+   font-family: "Raleway",sans-serif;
+   font-size: 19px;
+}
+
+blockquote {
+   margin-bottom: 10px;
+   padding-left: 15px;
+
+   color: #f9fef0;
+   border-left: 3px solid #fa4a4a;
+
+   font-family: monospace;
+   font-size: 20px;
+}
+
+cite {
+   margin-left: 100px;
+
+   color: #f9fef0;
+
+   font-family: monospace;
+   font-size: 16px;
+}
+
+/* Introduction */
+section#intro {
+   margin-top: 100px;
+}
+
+section#connect {
+   margin-bottom: 0px;
+   padding-bottom: 100px;
+}
+
+.left-floating-container {
+   width: 75%;
+   margin-bottom: 460px;
+   margin-left:5%;
+}
+
+.left-floating-container-top {
+   width: 75%;
+   margin-top: 100px;
+   margin-bottom: 460px;
+   margin-left:5%;
+}
+
+.left-floating-container-bottom {
+   width: 75%;
+   margin-bottom: 0px;
+   margin-left:5%;
+   padding-bottom: 100px;
+}
+
+.right-floating-container {
+   width: 75%;
+   margin-bottom: 460px;
+   margin-left: 25%;
+}
+
+.right-floating-container-bottom {
+   width: 75%;
+   margin-bottom: 0px;
+   margin-left: 25%;
+   padding-bottom: 100px;
+}
+
+.thumbnail {
+   display: inline-block;
+
+   width:40%;
+   height:40%;
+   margin: 15px;
+
+   box-shadow: 2px 2px 5px #141414;
+}
+
+#coffee-img {
+   position: relative;
+   z-index: -1;
+
+   width:80%;
+   height:80%;
+   margin-top: -130px;
+   margin-left: 75px;
+
+   opacity: 0.4;
+}
+
+#photo-container {
+   width:100%;
+
+   text-align: center;
+}
+
+/*Footer*/
+#contact-list-bottom {
+   flex-grow: 1;
+}
+
+#contact-list-bottom ul {
+   margin-top: -75px;
+   padding: 30px;
+
+   text-align: center;
+}
+
+#contact-list-bottom ul li {
+   display: inline-block;
+}
+
+/*--
+#intro-sentence{
+   background-color: #5b2ab6;
+   width: 150px;
+}
+
+*/
+
+
+/*
+h1 h2 {
+   Target h2 inside h1
+   <h1>
+      <h2><Target here/h2>
+   </h1>
+}
+
+h1 + h2 {
+   Target h2 that is preceded immediately by h1
+   <h1></h1>
+   <h2>Target here</h2>
+}
+
+h1 ~ h2 {
+   Target h2 that is preceded by h1
+   <h1></h1>
+   <p></p>
+   <h2>Target</h2>
+}*/
+
+@media (max-width: 1340px) {
+   h1 {
+      font-size: 80px;
+   }
+   h2 {
+      font-size: 87px;
+   }
+   h1+h2 {
+      margin-top: -123px;
+      margin-left: 126px;
+   }
+}
+
+@media (max-width: 800px) {
+   h1 {
+      font-size: 60px;
+   }
+   h2 {
+      font-size: 65px;
+   }
+   h1+h2 {
+      margin-top: -93px;
+      margin-left: 95px;
+   }
+}
+
+@media (max-width: 590px) {
+   h1 {
+      font-size: 43px;
+   }
+   h2 {
+      font-size: 47px;
+   }
+   h1+h2 {
+      margin-top: -66px;
+      margin-left: 69px;
+   }
+   div p {
+      width: 90%;
+      margin-left: 20px;
+   }
+   .right-floating-container {
+      width: 100%;
+      margin: 460px 0px;
+   }
+   .left-floating-container {
+      width: 100%;
+      margin: 460px 0px;
+   }
+   .right-floating-container-bottom {
+      width: 100%;
+      margin-left: 0px;
+   }
+}
+
+@media (max-width: 420px) {
+
+   header {
+      flex-wrap: wrap;
+   }
+
+   #contact-list ul {
+      margin-top: 15px;
+
+      text-align: center;
+   }
+   div p {
+      width: 90%;
+      margin-left: 20px;
+   }
+   h3 {
+      font-size: 27px;
+   }
+
+   h2 + p {
+      margin-left: 12px;
+   }
+   #photo-container img {
+      width:100%;
+      margin:0;
+   }
+   .left-floating-container {
+      width:100%;
+      margin: 200px 0px;
+   }
+   .left-floating-container-top {
+      width:100%;
+      margin: 70px 0px 70px;
+   }
+   .right-floating-container {
+      width:100%;
+      margin: 200px 0px;
+   }
+   .right-floating-container-bottom {
+      width:100%;
+      margin: 200px 0px 70px;
+   }
+}
