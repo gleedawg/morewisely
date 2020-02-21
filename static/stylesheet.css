@@ -70,18 +70,12 @@ Table of Contents
 
 /* 3. Header */
 header {
-   display: flex;
-
    padding: 20px 0;
-
-   flex-wrap: nowrap;
-   align-items: flex-start;
 }
 
 /* Home Button: Top Left Corner */
 div#home-button a {
-   border: 2px solid transparent;
-   transition: border 1s;
+   transition: color 0.5s;
    text-decoration: none;
 
    color: #2c9696;
@@ -91,14 +85,12 @@ div#home-button a {
 }
 
 div#home-button a:hover {
-  border: 2px solid #2c9696;
+  color: #ff5b2e;
 }
 
 #home-button {
    padding: 0 30px;
-
-   flex-grow: 0;
-   flex-shrink: 0;
+   text-align: center;
 }
 
 /* Contact List Top Menu */
@@ -110,7 +102,7 @@ div#home-button a:hover {
    margin: 0;
    padding: 0px 20px;
 
-   text-align: right;
+   text-align: center;
 }
 
 #contact-list ul li {
