@@ -9,64 +9,15 @@ Table of Contents
 */
 
 /* 2. Background */
-#grid-bg {
-   position: absolute;
-   z-index: -1;
-   top: 0;
-   left: 0;
+#page-content {
+  position: absolute;
 
-   display: block;
+  display: block;
 
-   width: 100%;
-   height: 100%;
+  width: 100%;
 
-   font-size: 0;
-
-   background-color: #f0f7ff;
+  background: #fff;
 }
-
-/* #grid-bg .grid-col {
-   position: relative;
-
-   display: inline-block;
-
-   box-sizing: border-box;
-   width: 20%;
-   height: 100%;
-
-   background-color: #f0f7ff;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-}
-
-#grid-bg .grid-col:nth-child(odd) {
-   background-color: #f0f7ff;
-}
-
-#grid-bg .grid-col:nth-child(1) {
-   z-index: 3;
-}
-
-#grid-bg .grid-col:nth-child(2) {
-   z-index: 2;
-
-   box-shadow: 0 0 14px rgba(0, 0, 0, 0.7);
-}
-
-#grid-bg .grid-col:nth-child(3) {
-   z-index: 1;
-
-   background-color: #f0f7ff;
-}
-
-#grid-bg .grid-col:nth-child(4) {
-   z-index: 2;
-
-   box-shadow: 0 0 14px rgba(0, 0, 0, 0.7);
-}
-
-#grid-bg .grid-col:nth-child(5) {
-   z-index: 3;
-} */
 
 /* 3. Header */
 header {
@@ -78,14 +29,14 @@ div#home-button a {
    transition: color 0.5s;
    text-decoration: none;
 
-   color: #2c9696;
+   color: #8E8E8E;
 
    font-family: 'Leckerli One',cursive;
    font-size: 40px;
 }
 
 div#home-button a:hover {
-  color: #ff5b2e;
+  color: #4A4A4A;
 }
 
 #home-button {
@@ -118,7 +69,7 @@ div#home-button a:hover {
    transform: scale(1);
    text-decoration: none;
 
-   color: #3b3b3b;
+   color: #8E8E8E;
 
    font-family: 'Raleway',sans-serif;
    font-size: 14px;
@@ -128,10 +79,17 @@ div#home-button a:hover {
 .contact-menu li a:hover {
    transform: scale(1.15);
 
-   color: #2c9696;
+   color: #4A4A4A;
 }
 
 /* 4. Body */
+.container {
+  display: block;
+
+  max-width: 32em;
+
+  margin: 0 auto;
+}
 
 body {
    position: relative;
@@ -139,8 +97,6 @@ body {
    display: block;
 
    margin: 0;
-
-   background-color: #141414;
 }
 
 h1,h2,h3 {
@@ -151,14 +107,11 @@ p,h2,h3 {
    color: #3b3b3b;
 }
 
-h1 {
-   color: #8a8a8a;
-
-   font-size: 130px;
-}
-
 h2 {
-   font-size: 80px;
+  margin: 50px 20px;
+
+  color: #8a8a8a;
+  font-size: 30px;
 }
 
 h3 {
@@ -241,8 +194,8 @@ blockquote {
    margin-bottom: 10px;
    padding-left: 15px;
 
-   color: #f9fef0;
-   border-left: 3px solid #2c9696;
+   color: #4A4A4A;
+   border-left: 3px solid #4A4A4A;
 
    font-family: monospace;
    font-size: 20px;
@@ -251,23 +204,20 @@ blockquote {
 cite {
    margin-left: 100px;
 
-   color: #f9fef0;
+   color: #4A4A4A;
 
    font-family: monospace;
    font-size: 16px;
 }
 
 /* Introduction */
-section#intro {
-   margin-top: 100px;
+
+section {
+  padding: 25px 50px;
+  text-align: center;
 }
 
-section#connect {
-   margin-bottom: 0px;
-   padding-bottom: 100px;
-}
-
-.left-floating-container {
+/* .left-floating-container {
    width: 75%;
    margin-bottom: 460px;
    margin-left:5%;
@@ -298,7 +248,7 @@ section#connect {
    margin-bottom: 0px;
    margin-left: 25%;
    padding-bottom: 100px;
-}
+} */
 
 .thumbnail {
    display: inline-block;
@@ -330,6 +280,7 @@ section#connect {
 
 /*Footer*/
 #contact-list-bottom {
+  position: absolute;
    flex-grow: 1;
 }
 
@@ -364,61 +315,6 @@ h1 ~ h2 {
    <p></p>
    <h2>Target</h2>
 }*/
-
-@media (max-width: 1340px) {
-   h1 {
-      font-size: 80px;
-   }
-   h2 {
-      font-size: 48px;
-   }
-   h1+h2 {
-      margin-top: -95px;
-      margin-left: 80px;
-   }
-}
-
-@media (max-width: 800px) {
-   h1 {
-      font-size: 60px;
-   }
-   h2 {
-      font-size: 65px;
-   }
-   h1+h2 {
-      margin-top: -93px;
-      margin-left: 95px;
-   }
-}
-
-@media (max-width: 590px) {
-   h1 {
-      font-size: 43px;
-   }
-   h2 {
-      font-size: 47px;
-   }
-   h1+h2 {
-      margin-top: -66px;
-      margin-left: 69px;
-   }
-   div p {
-      width: 90%;
-      margin-left: 20px;
-   }
-   .right-floating-container {
-      width: 100%;
-      margin: 460px 0px;
-   }
-   .left-floating-container {
-      width: 100%;
-      margin: 460px 0px;
-   }
-   .right-floating-container-bottom {
-      width: 100%;
-      margin-left: 0px;
-   }
-}
 
 @media (max-width: 420px) {
 
