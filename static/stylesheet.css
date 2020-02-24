@@ -115,18 +115,12 @@ h2 {
 }
 
 h3 {
-   margin-right: 5%;
-   margin-bottom: 10px;
-   padding-bottom: 3px;
+  font-size: 2em;
+  color: #3D3D3D;
+  margin: 1.5em 0;
+  text-align: center;
 
-   border-bottom: #2C9696 solid 3.5px;
-
-   font-size: 34px;
-}
-/*h2 corner of "P" from philosophy should sit in the middle of "o" from about*/
-h1+h2 {
-   margin-top: -200px;
-   margin-left: 203px;
+  border-bottom: #EBEBEB solid 1px;
 }
 
 p {
@@ -184,7 +178,7 @@ section p, ol {
 }
 
 li {
-   color: #f9fef0;
+   color: #4A4A4A;
 
    font-family: "Raleway",sans-serif;
    font-size: 19px;
