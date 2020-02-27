@@ -32,7 +32,7 @@ div#home-button a {
    color: #8E8E8E;
 
    font-family: 'Leckerli One',cursive;
-   font-size: 40px;
+   font-size: 26px;
 }
 
 div#home-button a:hover {
@@ -40,7 +40,6 @@ div#home-button a:hover {
 }
 
 #home-button {
-   padding: 0 30px;
    text-align: center;
 }
 
@@ -86,7 +85,7 @@ div#home-button a:hover {
 .container {
   display: block;
 
-  max-width: 32em;
+  max-width: 36em;
 
   margin: 0 auto;
 }
@@ -108,10 +107,14 @@ p,h2,h3 {
 }
 
 h2 {
-  margin: 50px 20px;
+  margin: 1.25em 0;
+  padding: 0.25em 0;
 
-  color: #8a8a8a;
-  font-size: 30px;
+  font-size: 2em;
+
+  color: #7a7a7a;
+
+  border-bottom: #EBEBEB solid 1.5px;
 }
 
 h3 {
@@ -127,7 +130,7 @@ p {
    font-family:'raleway',sans-serif;
    font-size: 17px;
    font-weight: 100;
-   line-height: 140%;
+   line-height: 150%;
 }
 
 p a {
