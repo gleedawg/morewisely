@@ -263,7 +263,7 @@ section {
   text-align: center;
 }
 
-ul.photo-container {
+.photo-container ul {
   display: flex;
   flex-wrap: wrap;
 }
