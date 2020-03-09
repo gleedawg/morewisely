@@ -149,7 +149,7 @@ h1,h2,h3 {
    font-family: 'Raleway',sans-serif;
 }
 
-p,h2,h3 {
+p,h2,h3,li {
    color: #3b3b3b;
 }
 
@@ -175,11 +175,12 @@ h3 {
 
 p {
    font-family:'raleway',sans-serif;
-   font-size: 17px;
+   font-size: 16px;
    font-weight: 100;
-   line-height: 1.5em;
+   line-height: 1.6;
 
    padding: 0.5em 0;
+	 margin: 0 9px;
 }
 
 p a {
@@ -224,16 +225,17 @@ section p {
    max-width: 650px;
 }
 
-section p, ol {
-   width:85%;
-   margin-left: 25px;
+ol{
+	margin-left: 30px;
 }
 
 li {
-   color: #4A4A4A;
-
    font-family: "Raleway",sans-serif;
-   font-size: 19px;
+   font-size: 16px;
+
+	 list-style-type: disc;
+
+	 padding: 8px 0;
 }
 
 blockquote {
