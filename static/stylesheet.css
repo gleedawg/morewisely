@@ -226,7 +226,7 @@ section p {
 
 section p, ol {
    width:85%;
-   margin-left: 40px;
+   margin-left: 25px;
 }
 
 li {
@@ -259,7 +259,6 @@ cite {
 /* Introduction */
 section {
   padding: 25px 50px;
-  text-align: center;
 }
 
 .photo-container ul {
