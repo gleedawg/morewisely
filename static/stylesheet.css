@@ -129,6 +129,9 @@ div#home-button a:hover {
 }
 
 /* 4. Body */
+html {
+	overflow-y: scroll;
+}
 .container {
   display: block;
 
