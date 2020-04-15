@@ -58,12 +58,10 @@ table {
 /* 2. Background */
 #page-content {
   position: absolute;
-
   display: block;
-
   width: 100%;
-
   background: #fff;
+	padding-bottom: 2.5em;
 }
 
 /* 3. Header */
