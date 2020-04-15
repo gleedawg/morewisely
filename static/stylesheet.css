@@ -315,6 +315,14 @@ section {
   }
 }
 
+@media screen and (max-width: 800px) {
+	.container {
+		max-width: 70em;
+		padding:0 1.5em;
+		overflow: hidden;
+	}
+}
+
 /* Short screens */
 @media (max-height: 480px) {
   .photo-container li {
