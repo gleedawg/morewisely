@@ -61,6 +61,7 @@ table {
   display: block;
   width: 100%;
   background: #f2fcf2;
+	padding-bottom: 20px;
 }
 
 /* 2.a Background for form */
@@ -156,6 +157,10 @@ header {
    padding: 0 8px;
 }
 
+.selected {
+	text-shadow: 0.5px 0.5px #08280a;
+}
+
 .rsvp {
   border: 2px solid #636566;
 }
@@ -185,6 +190,10 @@ header {
   display: flex;
   justify-content: center;
   padding: 0 20px;
+}
+
+.map {
+	max-width: 90%;
 }
 
 .video-container video{
@@ -280,18 +289,58 @@ header {
   letter-spacing: 1px;
 }
 
+.information {
+	margin: auto;
+  padding: 0 25px;
+  max-width: 720px;
+  text-align: left;
+  text-decoration: none;
+  color: #444444;
+  font-family: 'Raleway',sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.link {
+	padding: 8px 20px;
+}
+
+.link a:link, a:visited {
+	text-decoration: underline;
+	color: #3a671a;
+	background: rgba(#000000, 0);
+	-webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.link a:hover {
+	color: #f2fcf2;
+	background-color: #72826e;
+	text-decoration: none;
+}
+
 body {
    position: relative;
    display: block;
    margin: 0;
 }
 
-h1 {
+h1 h2 {
    font-family: 'Raleway',sans-serif;
+}
+
+h2 {
+	font-family: 'EB Garamond', serif;
+	font-size: 18px;
+	padding-top: 20px;
+	padding-bottom: 7px;
 }
 
 p,h2,h3,li {
    color: #3b3b3b;
+	 padding-bottom: 3px;
 }
 
 /* Media Queries */
